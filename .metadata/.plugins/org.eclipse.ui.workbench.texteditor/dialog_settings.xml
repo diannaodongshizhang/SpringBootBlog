@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="留言" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="留言"/>
+			<item value="activetagId"/>
+			<item value="activeTag"/>
+			<item value="append"/>
+			<item value="#array.length(tag.blogs)"/>
+			<item value="&quot;#array.length"/>
+			<item value="&quot;#array.length(tag.blogs)"/>
+			<item value="type"/>
+			<item value="邮箱"/>
+			<item value="Matt"/>
+			<item value="flag"/>
+			<item value="content"/>
+			<item value="Search"/>
+			<item value="/blog/{id}"/>
+			<item value="@{/blog/{id}(id=$(blog.id))}"/>
+		</list>
+		<list key="replacehistory">
+			<item value="tag"/>
+			<item value="yrx"/>
+			<item value="age"/>
+			<item value="ag"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="300" key="DIALOG_WIDTH"/>
+		<item value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI" key="DIALOG_FONT_NAME"/>
+		<item value="410" key="DIALOG_HEIGHT"/>
+		<item value="8" key="DIALOG_X_ORIGIN"/>
+		<item value="97" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

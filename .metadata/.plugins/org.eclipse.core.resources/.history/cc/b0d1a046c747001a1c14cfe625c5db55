@@ -1,0 +1,5 @@
+package com.yrx.util;
+
+public class MyBeanUtils {
+
+}

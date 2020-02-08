@@ -1,0 +1,28 @@
+package com.yrx.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.yrx.po.Comment;
+@Service
+public class CommentServiceImpl implements CommentService{
+	
+	
+	
+	@Override
+	public List<Comment> listCommentById(Long blogId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Comment saveComment(Comment comment) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+	
+	
+}

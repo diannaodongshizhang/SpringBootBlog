@@ -1,0 +1,5 @@
+package com.yrx.service;
+
+public class CommentServiceImpl {
+
+}

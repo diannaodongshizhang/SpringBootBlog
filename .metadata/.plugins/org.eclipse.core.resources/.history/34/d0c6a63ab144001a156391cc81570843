@@ -1,0 +1,52 @@
+package com.yrx.service;
+
+import java.util.List;
+
+import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
+
+import com.yrx.NotFoundException;
+import com.yrx.dao.BlogRepository;
+import com.yrx.po.Blog;
+@Service
+public class BlogServiceImpl implements BlogService {
+	@Autowired
+	private BlogRepository blogRepository;
+	
+	@Override
+	public Blog getBlog(Long id) {
+		// TODO Auto-generated method stub
+		return blogRepository.findById(id).get();
+	}
+
+	@Override
+	public List<Blog> listBlog(Pageable pageable, Blog blog) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Blog saveBlog(Blog blog) {
+		// TODO Auto-generated method stub
+		return blogRepository.save(blog);
+	}
+
+	@Override
+	public Blog updateBlog(Long id, Blog blog) {
+		Blog b=blogRepository.findById(id).get();
+		if(b==null) {
+			throw new NotFoundException("该博客不存在");
+		}
+		BeanUtils.copyProperties(b, blog);
+		return blogRepository.save(b);
+	}
+
+	@Override
+	public void deleteBlog(Long id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.yrx.dao;
+
+public interface CommentRepository extends JpaRepository<Comment,Long>{
+
+}

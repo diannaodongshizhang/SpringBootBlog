@@ -1,0 +1,5 @@
+package com.yrx.web;
+@Controller
+public class TypeShowController {
+
+}

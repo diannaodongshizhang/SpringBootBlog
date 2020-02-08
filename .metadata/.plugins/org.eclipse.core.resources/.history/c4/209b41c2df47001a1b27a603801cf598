@@ -1,0 +1,31 @@
+package com.yrx.service;
+
+
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+
+import com.yrx.po.Type;
+
+public interface TypeService {
+
+	
+	Type saveType(Type type);
+	
+	Type getType(Long id) ;
+	//分页查询
+	Page<Type> listType(Pageable pageable);
+	
+	Type updateType(Long id,Type type);
+	
+	void deleteType(Long id);
+	
+	Type getTypeByName(String name);
+	
+	List<Type> listType();
+
+	
+}

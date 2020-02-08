@@ -1,0 +1,15 @@
+package com.yrx.dao;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.yrx.po.Tag;
+
+public interface TagRepository extends JpaRepository<Tag,Long> {
+
+	Tag findByName(String name);
+
+	
+
+}
